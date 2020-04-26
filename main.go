@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	patterns := pattern.ImageToPatterns(`THE_PATH`, 2, 2)
+	patterns := pattern.ImageToPatterns(`.\scratch\BigPattern.png`, 2, 2)
 	ts := tile.NewTileSet(120, 30, patterns...)
 	ts.Collapse()
 	tile.PrintTileSet(ts)
